@@ -1,0 +1,207 @@
+/* INÍCIO DAS CONFIGURAÇÕES GERAIS */
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');            /* FONTE TÍTULO */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');           /* FONTE TEXTO */
+
+:root {
+    --font-titulo: 'Zen Maru Gothic', sans-serif;
+    --font-texto: 'Bebas Neue', sans-serif;
+    --cor1: #448CA0;
+    --cor2: #287A92;
+    --cor3: #106881;
+    --cor4: #065369;
+    --cor5: #023F50;
+    --cor6: #87ff8a;
+    --cor7: #dafff4;
+    --cor8: #2c3b59;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* FIM DAS CONFIGURAÇÕES GERAIS */
+
+/* INÍCIO CABEÇALHO */
+
+header {
+    max-height: 150px;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 11px -3px black;
+
+    padding: 20px 40px;
+}
+
+nav {
+
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    
+
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+nav > a:hover {
+    font-weight: bold;
+    transition-duration: 0.3s;
+    text-shadow: 0 0 10px white;
+}
+
+/* FIM DO CABEÇALHO */
+
+/* INÍCIO CORPO */
+
+html {
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+    background-attachment: fixed;
+}
+
+body {
+    font-family: var(--font-texto);
+}
+
+main {
+    background-color: white;
+    color: black;
+    min-width: 400px;
+    max-width: 1100px;
+
+
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+.tituloPrincipal {
+    font-size: 2em;
+    font-family: var(--font-titulo);
+    text-align: center;
+
+    padding: 20px 20px 10px 20px;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.3em;
+    text-indent: 10px;
+    line-height: 1.5em;
+}
+
+/* Imagem Inicio */
+
+
+#primeiroParag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parag {
+    padding: 20px;
+}
+
+.img1 {
+    margin: auto;
+    max-width: 100vw;
+    padding: 10px;
+}
+
+/* Imagem Nós */
+
+picture img {
+    /* background-color: black; */
+    display: block;
+    margin: auto;
+    max-width: 100vw;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 6px 1px var(--cor8);
+}
+
+
+.conceito {
+    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    color: white;
+    padding-left: 30px;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 20px 0px 20px 20px;
+}
+
+li {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* FORUMLÁRIOS DE CONTATO */
+
+.formNome, .formEmail, .formMensagem {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao {
+    display: grid;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+button {
+    font-family: var(--font-texto);
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+    color: white;
+
+    border: 0px;
+    border-radius: 15px;
+
+    padding: 10px 20px;
+}
+
+button:hover {
+    font-weight: bold;
+    transition-duration: 0.3s;
+    text-shadow: 0 0 10px white;
+}
+ button:active {
+    position: relative;
+    top: 1px;
+ }
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
